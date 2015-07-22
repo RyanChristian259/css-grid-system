@@ -1,6 +1,7 @@
 #container {
   max-width: 1000px;
   width: 100%;
+  margin: 0 auto;
 }
 
 #container *{
@@ -9,8 +10,9 @@
 
 .row {
 max-width: 100%;
-border: 1px solid;
+border: 2px solid;
 margin-bottom: 10px;
+overflow: hidden;
 }
 
 
@@ -21,6 +23,8 @@ margin-bottom: 10px;
  padding: 12px;
  background-color: lightblue;
  border: 1px solid;
+ padding: 20px;
+ text-align: center;
 }
 
 .col-1{
