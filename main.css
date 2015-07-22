@@ -19,11 +19,10 @@ overflow: hidden;
 [class*='col-'] {
  float: left;
  min-height: 1px;
- width: 16.66%;
- padding: 12px;
+ /*margin: 3px;*/
  background-color: lightblue;
  border: 1px solid;
- padding: 20px;
+ padding: 10px;
  text-align: center;
 }
 
@@ -40,7 +39,7 @@ overflow: hidden;
  }
 
 .col-4{
-  width: 33.33%;
+  width: 33.30%;
 }
 
 .col-5{
@@ -55,7 +54,7 @@ overflow: hidden;
   width: 58.3%;
 }
 .col-8{
-  width: 66.66%;
+  width: 66.3%;
 }
 
 .col-9{
