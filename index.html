@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>CSS Grid System</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="responsive.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-<div id="container">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Grid System</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="row"><h2 class="center-text">Row 1 - 12 columns</h2></div>
 
-<div class="row"><h1>Row1</h1></div>
+      <div class="row">
+        <h2 class="center-text">Row 2 - Split in thirds</h2>
+        <div class="col-4" class="left"><p>4 Columns, left side</p></div>
+        <div class="col-8" class="right">
+          <p>8 Columns, Right Side</p>
+          <div class="row">
+            <p>12 sub-columns</p>
+            <div class="col-1"><p>1</p></div>
+            <div class="col-1"><p>2</p></div>
+            <div class="col-1"><p>3</p></div>
+            <div class="col-1"><p>4</p></div>
+            <div class="col-1"><p>5</p></div>
+            <div class="col-1"><p>6</p></div>
+            <div class="col-1"><p>7</p></div>
+            <div class="col-1"><p>8</p></div>
+            <div class="col-1"><p>9</p></div>
+            <div class="col-1"><p>10</p></div>
+            <div class="col-1"><p>11</p></div>
+            <div class="col-1"><p>12</p></div>
+          </div>
+        </div>
+      </div>
 
-<div class="row"><h1>Row2</h1>
-  <div class="col-4" class="left"><p>Col4, left side</p></div>
-  <div class="col-8" class="right"><p>Col8, Right Side</p>
-    <div class="row">
-            <div class="col-1"><p>1</p></div>
-            <div class="col-1"><p>1</p></div>
-            <div class="col-1"><p>1</p></div>
-            <div class="col-1"><p>1</p></div>
-            <div class="col-1"><p>1</p></div>
-            <div class="col-1"><p>1</p></div>
-            <div class="col-1"><p>1</p></div>
-            <div class="col-1"><p>1</p></div>
-            <div class="col-1"><p>1</p></div>
-            <div class="col-1"><p>1</p></div>
-            <div class="col-1"><p>1</p></div>
-            <div class="col-1"><p>1</p></div>
-
+      <div class="row">
+        <h2 class="center-text">Row 3 - Split in half</h2>
+        <div class="col-6"><p>6 Columns Here</p></div>
+        <div class="col-6"><p>6 Columns Here</p></div>
+      </div>
     </div>
-  </div>
-</div>
-
-<div class="row"><h1>Row3</h1>
-          <div class="col-6"><p>6 Here</p></div>
-          <div class="col-6"><p>6 Here</p></div>
-  </div>
-</div>
-</body>
+  </body>
 </html>
